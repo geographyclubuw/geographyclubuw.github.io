@@ -1,0 +1,64 @@
+body {
+    width: 60%;
+    padding-left: 20%;
+    margin: 0;
+}
+
+header {
+    height: 60px;
+    font-weight: bold;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    height: 60px;
+}
+
+#brand {
+    padding-left: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.25em;
+}
+
+#body {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+#body-image {
+    display: flex;
+    width: 100%;
+}
+
+#calendar {
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#calendar-embed{
+    width: 100%;
+    height: 100%;
+}
+
+#header-logo {
+    width: 40px;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    margin-top: 20px;
+}
+
+@media (max-width: 1250px) {
+  body {
+    width: calc(100% - 30px);
+    padding-left: 15px;
+  }
+}
