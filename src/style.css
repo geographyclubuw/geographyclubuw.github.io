@@ -1,7 +1,7 @@
-body {
-    width: 60%;
-    padding-left: 20%;
-    margin: 0;
+html {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 header {
@@ -13,30 +13,75 @@ header {
     height: 60px;
 }
 
+body {
+    width: 100%;
+    margin: 0;
+}
+
 #brand {
-    padding-left: 10px;
+    padding-left: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 1.25em;
 }
 
-#body {
+#intro-section {
+    display: flex;
+    background-color: rgb(158, 110, 110);
+    color: white;
+    align-items: center;
+}
+
+#intro {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 20px;
+    font-weight: 300;
+    line-height: 1.75;
+    padding: 20px 0 20px 0;
+    align-items: center;
+    width: 60%;
+    margin: 0 auto;
 }
 
-#body-image {
+#intro-image {
     display: flex;
     width: 100%;
 }
 
-#calendar {
+.button {
+
+    display: block;
+    width: max-content;
+    margin: 0 auto;
+    background-color: #274269;
+    color: white;
+    padding: 10px 15px 10px 15px;
+    border-radius: 15px;
+    text-decoration: none;
+}
+
+.button:hover {
+    background-color: #102542;
+}
+
+#calendar-section {
+    align-items: center;
+    width: 60%;
+    margin: 0 auto;
+}
+
+#calendar-container {
     height: 600px;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+#calendar-title{
+    display: flex;
+    justify-content: center;
 }
 
 #calendar-embed{
@@ -54,11 +99,31 @@ footer {
     align-items: center;
     height: 40px;
     margin-top: 20px;
+    padding: 20px 0 20px 0;
+    font-weight: 300;
+    background-color: #102542;
+    color: white;
 }
 
-@media (max-width: 1250px) {
-  body {
-    width: calc(100% - 30px);
-    padding-left: 15px;
-  }
+
+@media screen and (max-width:768px) {  
+    #intro {
+        display: block;
+        width: calc(100vw - 30px);
+    }
+    #intro-image {
+        float: none;
+        text-align: center;
+    }
+    #intro-text {
+        display: block;   
+        margin: 0 auto;
+    }
+    #calendar-section {
+        width: calc(100vw - 30px);
+        margin: 0 auto;
+    }
+    #footer {
+        padding: 20px 10px 20px 10px;
+    }
 }
